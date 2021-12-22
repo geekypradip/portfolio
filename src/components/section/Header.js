@@ -38,7 +38,7 @@ const Header = () => {
             </label>
             <HeaderButton/>
             </div>
-            <img id="not-dark" onClick={scrollTo} alt="Contact Me" title="Contact Me" className="gtp" src="https://raw.githubusercontent.com/geekypradip/images/main/WhatsApp_Image_2021-12-12_at_1.45.03_PM-removebg-preview%20(1).png"></img>
+            <img id="not-dark" onClick={scrollTo} alt="Contact Me" title="Contact Me" className="gtp" src="https://incredible.co.nz/wp-content/uploads/2020/11/arrow-down.gif"></img>
         </div>
     )
     

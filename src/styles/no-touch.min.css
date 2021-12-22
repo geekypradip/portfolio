@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  overflow-x: hidden;
 }
 html.dark-mode {
   background-color: #000;
@@ -156,20 +157,53 @@ button:focus {
   box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
   border: 0.5px solid #eee;
 }
+.project_details_holder {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.project_details_holder > div {
+  padding: 1%;
+  flex: 48%;
+}
+.project_name_holder {
+  border-right: 1px solid rgb(134, 133, 133);
+}
 .project-card h2 {
   color: var(--primary-color);
   margin-top: 10px;
-  margin-left: 3%;
+  /* margin-left: 3%; */
   font-weight: 500;
 }
 .project-card h2:hover {
   color: var(--hover-color);
   text-decoration: none;
 }
-.project-card h3 {
+.project-card h3,
+.project-card h4 {
   text-align: left;
   font-size: 1rem;
-  margin-left: 3%;
+  /* margin-left: 3%; */
+}
+.deploy {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+.deploy > a {
+  text-decoration: none;
+  color: rgb(3, 3, 3);
+  font-size: 30px;
+  margin: 2%;
+}
+.linkText {
+  font-size: 10px;
+  display: none;
+}
+.deploy > a:hover {
+  color: #ff4753;
+}
+.deploy > a:hover > .linkText {
+  display: block;
 }
 .image-project {
   height: 300px;
@@ -212,11 +246,12 @@ button:focus {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2%;
 }
 .git-form {
   width: 1160px;
@@ -224,7 +259,7 @@ button:focus {
   display: block;
   margin: 3rem 3rem 0 3rem;
   background-color: #fff;
-  max-height: 80vh;
+  /* max-height: 80vh; */
 }
 .git-head-div {
   box-sizing: border-box;
@@ -335,14 +370,15 @@ textarea:focus {
 .Copy {
   color: #fff !important;
   font-weight: 500;
-  padding-top: 2%;
+  padding-top: 1%;
+  /* padding-bottom: 1%; */
 }
 .project-name {
   text-decoration: none;
 }
 .gtp {
   position: fixed;
-  left: 92%;
+  left: 85%;
   height: 150px;
   top: 82%;
   z-index: 1002;
@@ -555,8 +591,8 @@ input:checked + .slider:before {
   }
   .gtp {
     left: 80%;
-    top: 87%;
-    height: 75px;
+    /* top: 10%; */
+    height: 70px;
   }
   .Copy {
     display: none;
@@ -575,5 +611,11 @@ input:checked + .slider:before {
   .half form button {
     margin-left: auto;
     margin-right: auto;
+  }
+  .project_details_holder {
+    flex-direction: column;
+  }
+  .project_name_holder {
+    border: none;
   }
 }

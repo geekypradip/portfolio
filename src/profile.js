@@ -61,6 +61,14 @@ const skillsBar = [
     faClass: "fas fa-database",
   }
 ];
+const projectDepolyBar=
+    {
+      github:"fab fa-github" ,
+      deploy: "fas fa-globe"
+    }
+
+
+
 // Edit your projects, its name, your skills used to make it, and the url.
 // You can omit freely anything if you dont have it
 // To Add a Project, copy any one below and paste it after the last comma and increment the id's project number
@@ -72,13 +80,21 @@ const projects = [
     name: "Fathom health Clone",
     skills: ["HTML, CSS, JS"],
     url: "https://github.com/geekypradip/fathom-heath",
+    deployurl: "https://geeksblogs.000webhostapp.com/fathom-health/",
+    descriptions:`Fathom Health is a deep learning NLP system to accelerate medical reimbursement.`,
+    github:"fab fa-github" ,
+    deploy: "fas fa-globe"
   },
   {
     // Add image in './styles/images.css' in #project2
     id: "project2",
     name: "Bath And body Works Clone",
-    skills: ["HTML, CSS, JS, JSON, API"],
+    skills: ["HTML| CSS| JS| JSON| API"],
     url: "https://github.com/geekypradip/bath-and-body-works-clone",
+    deployurl: "https://geeksblogs.000webhostapp.com/bath-and-bodyworks/",
+    descriptions:`Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
+    github:"fab fa-github" ,
+    deploy: "fas fa-globe"
   }
 
   ,{
@@ -87,6 +103,10 @@ const projects = [
     name: "Recepie search",
     skills: ["HTML, CSS, JS"],
     url: "https://github.com/geekypradip/food-app",
+    deployurl: "https://github.com/geekypradip/food-app",
+    descriptions:`Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
+    github:"fab fa-github" ,
+      deploy: "fas fa-globe"
   },
   {
     // Add image in './styles/images.css' in #project4
@@ -94,6 +114,10 @@ const projects = [
     name: "News app",
     skills: ["HTML, CSS, JS"],
     url: "https://github.com/geekypradip/newsApp",
+    deployurl: "https://github.com/geekypradip/newsApp",
+    descriptions:`Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
+    github:"fab fa-github" ,
+      deploy: "fas fa-globe"
   },
   // {
   //   // Add image in './styles/images.css' in #project5
@@ -161,6 +185,7 @@ export {
   background,
   about,
   skillsBar,
+  projectDepolyBar,
   projects,
   miscellaneous,
   contact,
