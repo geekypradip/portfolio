@@ -157,17 +157,15 @@ button:focus {
   box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
   border: 0.5px solid #eee;
 }
-.project_details_holder {
-  display: flex;
-  /* justify-content: space-between; */
-}
-.project_details_holder > div {
+/* .project_details_holder {
+} */
+/* .project_details_holder > div {
   padding: 1%;
   flex: 48%;
-}
-.project_name_holder {
-  border-right: 1px solid rgb(134, 133, 133);
-}
+} */
+/* .project_name_holder {
+  
+} */
 .project-card h2 {
   color: var(--primary-color);
   margin-top: 10px;
@@ -178,7 +176,19 @@ button:focus {
   color: var(--hover-color);
   text-decoration: none;
 }
-.project-card h3,
+.project-card h3 > i {
+  margin: 2%;
+}
+.fa-html5 {
+  color: tomato;
+}
+.fa-js {
+  color: rgb(161, 161, 12);
+}
+.fa-css3 {
+  color: rgb(12, 87, 131);
+}
+
 .project-card h4 {
   text-align: left;
   font-size: 1rem;
@@ -197,13 +207,13 @@ button:focus {
 }
 .linkText {
   font-size: 10px;
-  display: none;
+  visibility: hidden;
 }
 .deploy > a:hover {
   color: #ff4753;
 }
 .deploy > a:hover > .linkText {
-  display: block;
+  visibility: visible;
 }
 .image-project {
   height: 300px;

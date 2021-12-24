@@ -10,11 +10,12 @@ const Project = ({id, name, url, skills,descriptions,github,deploy,deployurl}) =
                 <div className="project_name_holder">
 
                     <a title={url} className="project-name" rel="noopener noreferrer" target="_blank" href={url}><h2>{name}</h2></a>
-                { skills && <h3>{skills.map(skill => skill)}</h3> }
+                
     
                 </div>
                 <div className="project_decs_holder">
                    {descriptions && <h4>{descriptions}</h4>}
+                   { skills && <h3>{skills.map(skill => skill)}</h3> }
                    <div className="deploy">
                    <a href={url} target="_blank"> 
                    <i className={github}/>
