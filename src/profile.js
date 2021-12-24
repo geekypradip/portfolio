@@ -103,7 +103,7 @@ const projects = [
     name: "Recepie search",
     skills: [<i className={'fab fa-html5'}></i>, <i className={'fab fa-js'}></i>, <i className={'fab fa-css3'}></i>],
     url: "https://github.com/geekypradip/food-app",
-    deployurl: "https://github.com/geekypradip/food-app",
+    deployurl: "https://geekypradip.github.io/food-app/",
     descriptions:`Recepie Search is Api Based food recepie search app . where you can search for a perticular of any food.`,
     github:"fab fa-github" ,
       deploy: "fas fa-globe"
