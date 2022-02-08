@@ -2,7 +2,7 @@ import React from 'react'
 import { contact, section5Title, social } from '../../profile'
 
 const Contact = () => {
-    
+
     return (
         <div className="parallax">
                 <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
@@ -24,7 +24,7 @@ const Contact = () => {
                 </div>
                 <div className="col-12 col-sm-6 half">
                     <p className="lead">
-                        {contact.pitch}        
+                        {contact.pitch}
                     </p>
                 <div className="d-flex justify-content-center align-items-center flex-column">
                 <div className="inline-block">
@@ -40,10 +40,10 @@ const Contact = () => {
             </div>
             </div>
         </div>
-            <p id="not-dark" className="Copy">2021 © Copyright <strong>{contact.copyright}</strong>. All Rights Reserved</p>
+            <p id="not-dark" className="Copy">2022 © Copyright <strong>{contact.copyright}</strong>. All Rights Reserved</p>
         </div>
     )
-    
+
 }
 
 export default Contact
