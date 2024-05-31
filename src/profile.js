@@ -78,9 +78,6 @@ const projectDepolyBar = {
   deploy: "fas fa-globe",
 };
 
-// Edit your projects, its name, your skills used to make it, and the url.
-// You can omit freely anything if you dont have it
-// To Add a Project, copy any one below and paste it after the last comma and increment the id's project number
 const section3Title = "Projects";
 const projects = [
   {
@@ -97,9 +94,9 @@ const projects = [
     descriptions: `Fathom Health is a deep learning NLP system to accelerate medical reimbursement.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",
+    image: "https://miro.medium.com/max/700/1*7pnTMLWX-fEWjlF3pc-eOw.png",
   },
   {
-    // Add image in './styles/images.css' in #project2
     id: "project2",
     name: "Bath And body Works Clone",
     skills: [
@@ -112,26 +109,10 @@ const projects = [
     descriptions: `Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",
+    image:
+      "https://raw.githubusercontent.com/geekypradip/images/main/Screenshot%20from%202021-12-24%2019-34-17.png",
   },
   {
-    // Add image in './styles/images.css' in #project2
-    id: "project4",
-    name: "Booking.com clone",
-    skills: [
-      <i className={"fab fa-html5"}></i>,
-      <i className={"fab fa-react"}></i>,
-      <i className={"fab fa-css3"}></i>,
-    ],
-    url: "https://github.com/geekypradip/Booking.com-clone",
-    deployurl: "https://geekypradip.github.io/Booking.com-clone/",
-    descriptions: `Booking.com is a Dutch online travel agency for lodging reservations & other travel products, and a subsidiary of Booking Holdings. `,
-    github: "fab fa-github",
-    deploy: "fas fa-globe",
-  },
-
-  ,
-  {
-    // Add image in './styles/images.css' in #project3
     id: "project3",
     name: "Recepie search",
     skills: [
@@ -144,57 +125,50 @@ const projects = [
     descriptions: `Recepie Search is Api Based food recepie search app . where you can search for a perticular of any food.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",
+    image:
+      "https://raw.githubusercontent.com/geekypradip/images/main/Screenshot%20from%202021-10-13%2018-53-59.png",
   },
-  // {
-  //   // Add image in './styles/images.css' in #project4
-  //   id: "project4",
-  //   name: "News app",
-  //   skills: ["HTML, CSS, JS"],
-  //   url: "https://github.com/geekypradip/newsApp",
-  //   deployurl: "https://github.com/geekypradip/newsApp",
-  //   descriptions:`Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
-  //   github:"fab fa-github" ,
-  //     deploy: "fas fa-globe"
-  // },
-  // {
-  //   // Add image in './styles/images.css' in #project5
-  //   id: "project5",
-  //   name: "Project 5",
-  //   skills: ["HTML, CSS, JS"],
-  //   url: "https://github.com/geekypradip",
-  // },
-  // {
-  //   // Add image in './styles/images.css' in #project6
-  //   id: "project6",
-  //   name: "Project 6",
-  //   skills: ["HTML, CSS, JS"],
-  //   url: "https://github.com/geekypradip",
-  // },
+  {
+    id: "project4",
+    name: "Booking.com clone",
+    skills: [
+      <i className={"fab fa-html5"}></i>,
+      <i className={"fab fa-react"}></i>,
+      <i className={"fab fa-css3"}></i>,
+    ],
+    url: "https://github.com/geekypradip/Booking.com-clone",
+    deployurl: "https://geekypradip.github.io/Booking.com-clone/",
+    descriptions: `Booking.com is a Dutch online travel agency for lodging reservations & other travel products, and a subsidiary of Booking Holdings. `,
+    github: "fab fa-github",
+    deploy: "fas fa-globe",
+    image:
+      "https://raw.githubusercontent.com/geekypradip/images/main/Screenshot%20from%202022-02-08%2017-08-57.png",
+  },
 ];
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you dont have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = "Miscellaneous";
-const miscellaneous = [
-  {
-    // Add image in './styles/images.css' in #misc1
-    id: "misc1",
-    name: "Miscellaneous 1",
-    url: "",
-  },
-  {
-    // Add image in './styles/images.css' in #misc2
-    id: "misc2",
-    name: "Miscellaneous 2",
-    url: "",
-  },
-  {
-    // Add image in './styles/images.css' in #misc3
-    id: "misc3",
-    name: "Miscellaneous 3",
-    url: "",
-  },
-];
+// const section4Title = "Miscellaneous";
+// const miscellaneous = [
+//   {
+//     // Add image in './styles/images.css' in #misc1
+//     id: "misc1",
+//     name: "Miscellaneous 1",
+//     url: "",
+//   },
+//   {
+//     // Add image in './styles/images.css' in #misc2
+//     id: "misc2",
+//     name: "Miscellaneous 2",
+//     url: "",
+//   },
+//   {
+//     // Add image in './styles/images.css' in #misc3
+//     id: "misc3",
+//     name: "Miscellaneous 3",
+//     url: "",
+//   },
+// ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
@@ -223,12 +197,12 @@ export {
   background,
   contact,
   header,
-  miscellaneous,
+  // miscellaneous,
   projectDepolyBar,
   projects,
   section2title,
   section3Title,
-  section4Title,
+  // section4Title,
   section5Title,
   skillsBar,
   social,
