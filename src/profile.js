@@ -19,11 +19,7 @@ const background = {
 // To update your image, go to './styles/images.css'
 const section2title = "About Me";
 const about = {
-  paragraph: `Observant and detail-oriented aspiring full-
-    stack web developer with a specialization in
-    MERN stack. Well-versed in technology and
-    writing code to create Web apps that are
-    reliable and user-friendly.`,
+  paragraph: `Software Engineer with a passion for solving real-world problems through optimized code. Skilled in designing and integrating intuitive solutions using HTML, CSS, JavaScript, React, Redux, TypeScript, Bootstrap, and Material UI. Dedicated to staying fit through daily exercise and enjoy playing video games in my downtime.`,
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
@@ -105,7 +101,7 @@ const projects = [
       <i className={"fab fa-css3"}></i>,
     ],
     url: "https://github.com/geekypradip/bath-and-body-works-clone",
-    deployurl: "https://geeksblogs.000webhostapp.com/bath-and-bodyworks/",
+    deployurl: "https://geekypradip.github.io/bath-and-body-works-clone/",
     descriptions: `Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",

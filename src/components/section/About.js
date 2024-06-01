@@ -1,7 +1,7 @@
 import React from "react";
+import { ProfilePhotoPng } from "../../asset/";
 import { about, section2title, skillsBar, social } from "../../profile";
 import Skills from "../layouts/Skills";
-
 const About = () => {
   return (
     <div id="about" className="effect2">
@@ -9,6 +9,7 @@ const About = () => {
         <div
           className="col-12 d-none d-md-block offset-md-1 col-md-4 Photo"
           id="not-dark2"
+          style={{ backgroundImage: `url(${ProfilePhotoPng})` }}
         ></div>
         <div className="col-12 offset-md-1 col-md-6 about">
           <div className="About-title-box">
