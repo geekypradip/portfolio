@@ -258,7 +258,7 @@ const projects = [
 const section5Title = "Get in Touch";
 const contact = {
   pitch:
-    "hey, if you have any suggestions or queries feel free to contact me, please visit my social profiles below links. If You want to get my resume, you can download it from the below button.",
+    "If you have any suggestions or queries, feel free to contact me through my social profiles linked below. You can also download my resume using the button below. I am always open to new opportunities and collaborations.",
   copyright: "pradip Mandal",
   contactUrl: "",
 };
