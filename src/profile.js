@@ -9,7 +9,7 @@ import {
   StyledComponent,
   Typescript,
 } from "./asset/icon/jsx";
-import { aranoz, nuptial } from "./asset/projects";
+import { aranoz, fathom, nuptial } from "./asset/projects";
 
 // Change website animations
 const animation = {
@@ -192,7 +192,7 @@ const projects = [
     descriptions: `Fathom Health is a deep learning NLP system to accelerate medical reimbursement.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",
-    image: "https://miro.medium.com/max/700/1*7pnTMLWX-fEWjlF3pc-eOw.png",
+    image: fathom,
   },
   {
     id: "bath-and-body-works",
