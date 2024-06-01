@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ba1f273c.chunk.css",
-    "main.js": "/portfolio/static/js/main.3390c33c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3390c33c.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.86bc4953.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.86bc4953.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -13,6 +13,7 @@
     "static/css/main.ba1f273c.chunk.css.map": "/portfolio/static/css/main.ba1f273c.chunk.css.map",
     "static/js/2.f63643a9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f63643a9.chunk.js.LICENSE.txt",
     "static/media/aranoz.e02b6b17.png": "/portfolio/static/media/aranoz.e02b6b17.png",
+    "static/media/fathom.a0767085.png": "/portfolio/static/media/fathom.a0767085.png",
     "static/media/nuptial.48bad841.png": "/portfolio/static/media/nuptial.48bad841.png",
     "static/media/profile-removebg.8f5a0370.png": "/portfolio/static/media/profile-removebg.8f5a0370.png",
     "static/media/profile.4d94511a.jpeg": "/portfolio/static/media/profile.4d94511a.jpeg"
@@ -22,6 +23,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.f63643a9.chunk.js",
     "static/css/main.ba1f273c.chunk.css",
-    "static/js/main.3390c33c.chunk.js"
+    "static/js/main.86bc4953.chunk.js"
   ]
 }
