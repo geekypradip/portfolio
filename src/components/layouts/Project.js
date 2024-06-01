@@ -35,14 +35,18 @@ const Project = ({
           {descriptions && <h4>{descriptions}</h4>}
           {skills && <h3>{Children.toArray(skills.map((skill) => skill))}</h3>}
           <div className="deploy">
-            <a href={url} target="_blank" rel="noreferrer">
-              <i className={github} />
-              <label className="linkText">Source code</label>
-            </a>
-            <a href={deployurl} target="_blank" rel="noreferrer">
-              <i className={deploy} />
-              <label className="linkText">Live demo</label>
-            </a>
+            {url && (
+              <a href={url} target="_blank" rel="noreferrer">
+                <i className={github} />
+                <label className="linkText">Source code</label>
+              </a>
+            )}
+            {deployurl && (
+              <a href={deployurl} target="_blank" rel="noreferrer">
+                <i className={deploy} />
+                <label className="linkText">Live demo</label>
+              </a>
+            )}
           </div>
         </div>
       </div>

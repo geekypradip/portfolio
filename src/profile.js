@@ -9,7 +9,7 @@ import {
   StyledComponent,
   Typescript,
 } from "./asset/icon/jsx";
-import { aranoz, fathom, nuptial } from "./asset/projects";
+import { aranoz, deepmatrix, fathom, nuptial } from "./asset/projects";
 
 // Change website animations
 const animation = {
@@ -195,21 +195,35 @@ const projects = [
     image: fathom,
   },
   {
-    id: "bath-and-body-works",
-    name: "Bath And body Works Clone",
+    id: "deepmatrix",
+    name: "deepmatrix io",
     skills: [
       <i className={"fab fa-html5"}></i>,
-      <i className={"fab fa-js"}></i>,
+      <i className={"fab fa-react"} style={{ color: "#74c0fc" }}></i>,
       <i className={"fab fa-css3"}></i>,
     ],
-    url: "https://github.com/geekypradip/bath-and-body-works-clone",
-    deployurl: "https://geekypradip.github.io/bath-and-body-works-clone/",
-    descriptions: `Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
-    github: "fab fa-github",
+    deployurl: "https://deepmatrix.io/",
+    descriptions: `DeepMatrix is a deep tech startup transforming the utilisation of geospatial data. With its cloud-native SaaS platform and AI-driven business model, the company offers comprehensive capabilities across the entire data life cycle, encompassing data ingestion through to advanced analytics.`,
+    // github: "fab fa-github",
     deploy: "fas fa-globe",
-    image:
-      "https://raw.githubusercontent.com/geekypradip/images/main/Screenshot%20from%202021-12-24%2019-34-17.png",
+    image: deepmatrix,
   },
+  // {
+  //   id: "bath-and-body-works",
+  //   name: "Bath And body Works Clone",
+  //   skills: [
+  //     <i className={"fab fa-html5"}></i>,
+  //     <i className={"fab fa-js"}></i>,
+  //     <i className={"fab fa-css3"}></i>,
+  //   ],
+  //   url: "https://github.com/geekypradip/bath-and-body-works-clone",
+  //   deployurl: "https://geekypradip.github.io/bath-and-body-works-clone/",
+  //   descriptions: `Bath and Body Works is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care.`,
+  //   github: "fab fa-github",
+  //   deploy: "fas fa-globe",
+  //   image:
+  //     "https://raw.githubusercontent.com/geekypradip/images/main/Screenshot%20from%202021-12-24%2019-34-17.png",
+  // },
   // {
   //   id: "project3",
   //   name: "Recepie search",
