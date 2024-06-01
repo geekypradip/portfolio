@@ -1,2 +1,3 @@
 import aranoz from "./aranoz.png";
-export { aranoz };
+import nuptial from "./nuptial.png";
+export { aranoz, nuptial };

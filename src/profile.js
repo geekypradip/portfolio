@@ -9,7 +9,7 @@ import {
   StyledComponent,
   Typescript,
 } from "./asset/icon/jsx";
-import { aranoz } from "./asset/projects";
+import { aranoz, nuptial } from "./asset/projects";
 
 // Change website animations
 const animation = {
@@ -147,7 +147,6 @@ const projectDepolyBar = {
 const section3Title = "Projects";
 const projects = [
   {
-    // Add image in './styles/images.css' in #project1
     id: "Aranoz",
     name: "Aranoz Ecommerce Project",
     skills: [
@@ -164,7 +163,23 @@ const projects = [
     image: aranoz,
   },
   {
-    // Add image in './styles/images.css' in #project1
+    id: "Nuptial",
+    name: "Nuptial is a Event management website ",
+    skills: [
+      <i className={"fab fa-html5"}></i>,
+      <i className={"fab fa-js"} style={{ color: "fdd235" }}></i>,
+      <i className={"fab fa-css3"}></i>,
+      <i className={"fab fa-bootstrap"}></i>,
+      <i className={"fab fa-sass"} style={{ color: "#d824e5" }}></i>,
+    ],
+    url: "https://github.com/geekypradip/nuptial",
+    deployurl: "https://geekypradip.github.io/nuptial/",
+    descriptions: `Nuptial is a Event management website , where you can manage your marriage events`,
+    github: "fab fa-github",
+    deploy: "fas fa-globe",
+    image: nuptial,
+  },
+  {
     id: "fathom-health",
     name: "Fathom health Clone",
     skills: [
