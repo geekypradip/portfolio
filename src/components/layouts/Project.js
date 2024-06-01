@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 
 const Project = ({
   id,
@@ -33,7 +33,7 @@ const Project = ({
         </div>
         <div className="project_decs_holder">
           {descriptions && <h4>{descriptions}</h4>}
-          {skills && <h3>{skills.map((skill) => skill)}</h3>}
+          {skills && <h3>{Children.toArray(skills.map((skill) => skill))}</h3>}
           <div className="deploy">
             <a href={url} target="_blank" rel="noreferrer">
               <i className={github} />

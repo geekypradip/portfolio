@@ -32,6 +32,7 @@ const About = () => {
               key={x.name}
               faClass={x.faClass}
               svg={x.svg}
+              element={x.element}
               label={x.name}
             />
           ))}
