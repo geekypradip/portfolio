@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { contact, section5Title, social } from "../../profile";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    subject: "",
+    message: "",
+  });
+
+  const submitForm = (event) => {
+    event.preventDefault();
+    window.location.href = `mailto:join2geeks@gmail.com?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=Name: ${encodeURIComponent(
+      formData.firstname
+    )}%0DMessage: ${encodeURIComponent(formData.message)}`;
+  };
+  const handleFormChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
   return (
     <div className="parallax">
       <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
@@ -15,36 +33,36 @@ const Contact = () => {
         <div className="container">
           <div className="git-cont row">
             <div className="col-12 col-sm-6 half">
-              <form>
+              <form onSubmit={submitForm}>
                 <input
                   type="text"
                   id="fname"
                   name="firstname"
                   placeholder="Your name"
                   required
+                  value={formData.name}
+                  onChange={handleFormChange}
                 ></input>
-                <input
-                  type="mail"
-                  id="mailid"
-                  name="Email"
-                  placeholder="Email Address"
-                  required
-                ></input>
+
                 <input
                   type="text"
                   id="sub"
-                  name="Subject"
+                  name="subject"
                   placeholder="Subject"
                   required
+                  value={formData.subject}
+                  onChange={handleFormChange}
                 ></input>
                 <textarea
                   id="msg"
                   name="message"
                   placeholder="Message"
                   required
+                  value={formData.message}
+                  onChange={handleFormChange}
                 ></textarea>
                 <button style={{ cursor: "pointer" }} type="submit">
-                  Send Message
+                  Send Email
                 </button>
               </form>
             </div>
