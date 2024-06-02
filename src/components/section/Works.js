@@ -1,8 +1,9 @@
 import React from "react";
 import { projects, section3Title } from "../../profile";
 import Project from "../layouts/Project";
+import ShowAllProjectsButton from "../layouts/ShowAllProjects";
 
-const Works = () => {
+const Works = ({ onExploreAllProjectsClick }) => {
   return (
     <>
       <div data-aos="zoom-in-up" data-aos-once="true" className="third">
@@ -30,6 +31,8 @@ const Works = () => {
               />
             ))}
         </div>
+
+        <ShowAllProjectsButton onClick={onExploreAllProjectsClick} />
       </div>
 
       {/* <div className="third">
