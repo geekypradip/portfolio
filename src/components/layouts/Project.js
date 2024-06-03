@@ -10,9 +10,14 @@ const Project = ({
   deploy,
   deployurl,
   image,
+  list,
 }) => {
   return (
-    <div data-aos="fade-up" className=" col-12 col-lg-12 project-card">
+    <div
+      data-aos={list ? "fade-up" : ""}
+      data-aos-once="true"
+      className={`col-12 col-lg-${list ? 12 : 5} project-card`}
+    >
       <div className="image-project">
         <div
           className={`img-pro ${id}`}

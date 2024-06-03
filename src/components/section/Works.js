@@ -4,20 +4,35 @@ import Project from "../layouts/Project";
 import ShowAllProjectsButton from "../layouts/ShowAllProjects";
 
 const Works = ({ onExploreAllProjectsClick }) => {
+  const [listView, setListView] = React.useState(true);
   return (
     <>
       <div data-aos="zoom-in-up" data-aos-once="true" className="third">
         <>
-          <div className="pp-head-line mx-auto text-center">
+          <div className="pp-head-line mx-auto text-center d-flex align-items-center">
             <h1 id="Projects" className="red-line pp-head">
               {section3Title}
             </h1>
+            <div>
+              <button
+                type="button"
+                className="btn btn-danger mx-5"
+                onClick={() => setListView((prev) => !prev)}
+              >
+                {listView ? (
+                  <i className="fas fa-grip-lines"></i>
+                ) : (
+                  <i className="fas fa-grip-vertical"></i>
+                )}
+              </button>
+            </div>
           </div>
         </>
         <div className="row">
           {projects &&
             projects.map((x) => (
               <Project
+                list={listView}
                 key={x.id}
                 id={x.id}
                 url={x.url}
