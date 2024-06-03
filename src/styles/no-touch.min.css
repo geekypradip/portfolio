@@ -313,10 +313,11 @@ textarea:focus {
   box-shadow: none;
   border: 1px solid var(--primary-color);
 }
-.half form button {
+.half form button,
+.default-button {
   padding: 10px 15px;
   font-size: 1rem;
-  border-radius: 2rem;
+  border-radius: 3px;
   color: #fff;
   background-color: var(--primary-color);
   box-shadow: none;
@@ -325,7 +326,8 @@ textarea:focus {
   margin-top: 20px;
   margin-left: 20px;
 }
-.half form button:hover {
+.half form button:hover,
+.default-button:hover {
   background-color: var(--hover-color);
 }
 .half form {

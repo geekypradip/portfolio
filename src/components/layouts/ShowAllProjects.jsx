@@ -6,8 +6,8 @@ const ShowAllProjectsButton = ({ onClick }) => {
     onClick?.();
   };
   return (
-    <div className="mx-auto" style={{ position: "relative" }}>
-      <button className="see  m-3 px-5 ">Explore More</button>
+    <div className="mx-auto position-relative">
+      <button className="default-button">Explore More</button>
     </div>
   );
 };

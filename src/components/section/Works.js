@@ -16,7 +16,7 @@ const Works = ({ onExploreAllProjectsClick }) => {
             <div>
               <button
                 type="button"
-                className="btn btn-danger mx-5"
+                className="btn btn-outline-danger btn-sm mx-5 "
                 onClick={() => setListView((prev) => !prev)}
               >
                 {listView ? (
