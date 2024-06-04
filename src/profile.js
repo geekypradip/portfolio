@@ -9,7 +9,13 @@ import {
   StyledComponent,
   Typescript,
 } from "./asset/icon/jsx";
-import { aranoz, deepmatrix, fathom, nuptial } from "./asset/projects";
+import {
+  aranoz,
+  deepmatrix,
+  deepmatrix_app,
+  fathom,
+  nuptial,
+} from "./asset/projects";
 
 // Change website animations
 const animation = {
@@ -147,34 +153,100 @@ const projectDepolyBar = {
 const section3Title = "Projects";
 const projects = [
   {
+    id: "deepmatrix-site",
+    name: "deepmatrix.io",
+    skills: {
+      fa: [
+        <i className={"fab fa-html5"}></i>,
+        <i className={"fab fa-react"} style={{ color: "#74c0fc" }}></i>,
+        <i className={"fab fa-css3"}></i>,
+      ],
+      svg: [
+        {
+          ele: Redux,
+          color: "#593D88",
+        },
+        {
+          ele: Typescript,
+          color: "#74c0fc",
+        },
+      ],
+    },
+    deployurl: "https://deepmatrix.io/",
+    descriptions: `DeepMatrix is a deep tech startup transforming the utilisation of geospatial data. With its cloud-native SaaS platform and AI-driven business model, the company offers comprehensive capabilities across the entire data life cycle, encompassing data ingestion through to advanced analytics.`,
+    deploy: "fas fa-globe",
+    image: deepmatrix,
+  },
+  {
+    id: "deepmatrix-app",
+    name: "deepmatrix web app",
+    skills: {
+      fa: [
+        <i className={"fab fa-html5"}></i>,
+        <i className={"fab fa-react"} style={{ color: "#74c0fc" }}></i>,
+        <i className={"fab fa-css3"}></i>,
+      ],
+      svg: [
+        {
+          ele: Redux,
+          color: "#593D88",
+        },
+        {
+          ele: Typescript,
+          color: "#74c0fc",
+        },
+        {
+          ele: Leaflet,
+          color: "#1EB201",
+        },
+        {
+          ele: MUI,
+          color: "#027FFE",
+        },
+        {
+          ele: Sass,
+          color: "#C56494",
+        },
+      ],
+    },
+    deployurl: "https://cloud.deepmatrix.io/",
+    descriptions: `DeepMatrix is a deep tech startup transforming the utilisation of geospatial data. With its cloud-native SaaS platform and AI-driven business model, the company offers comprehensive capabilities across the entire data life cycle, encompassing data ingestion through to advanced analytics.`,
+    deploy: "fas fa-globe",
+    image: deepmatrix_app,
+  },
+  {
     id: "Aranoz",
-    name: "Aranoz Ecommerce Project",
-    skills: [
-      <i className={"fab fa-html5"}></i>,
-      <i className={"fab fa-js"} style={{ color: "fdd235" }}></i>,
-      <i className={"fab fa-css3"}></i>,
-      <i className={"fab fa-sass"} style={{ color: "#d824e5" }}></i>,
-    ],
+    name: "Aranoz Ecommerce Template",
+    skills: {
+      fa: [
+        <i className={"fab fa-html5"}></i>,
+        <i className={"fab fa-js"} style={{ color: "fdd235" }}></i>,
+        <i className={"fab fa-css3"}></i>,
+        <i className={"fab fa-sass"} style={{ color: "#d824e5" }}></i>,
+      ],
+    },
     url: "https://github.com/geekypradip/aranoz",
     deployurl: "https://geekypradip.github.io/aranoz/",
-    descriptions: `Aranoz is a Ecommerce application.`,
+    descriptions: `Aranoz is a modern e-commerce template, fully responsive across all screen sizes. It includes features such as product search, single product view, and a cart page.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",
     image: aranoz,
   },
   {
     id: "Nuptial",
-    name: "Nuptial is a Event management website ",
-    skills: [
-      <i className={"fab fa-html5"}></i>,
-      <i className={"fab fa-js"} style={{ color: "fdd235" }}></i>,
-      <i className={"fab fa-css3"}></i>,
-      <i className={"fab fa-bootstrap"}></i>,
-      <i className={"fab fa-sass"} style={{ color: "#d824e5" }}></i>,
-    ],
+    name: "Nuptial",
+    skills: {
+      fa: [
+        <i className={"fab fa-html5"}></i>,
+        <i className={"fab fa-js"} style={{ color: "fdd235" }}></i>,
+        <i className={"fab fa-css3"}></i>,
+        <i className={"fab fa-bootstrap"}></i>,
+        <i className={"fab fa-sass"} style={{ color: "#d824e5" }}></i>,
+      ],
+    },
     url: "https://github.com/geekypradip/nuptial",
     deployurl: "https://geekypradip.github.io/nuptial/",
-    descriptions: `Nuptial is a Event management website , where you can manage your marriage events`,
+    descriptions: `Nuptial is a fully responsive event management template, optimized for all screen sizes. It includes all the necessary pages for comprehensive event management. The demo event featured in the template showcases a marriage event.`,
     github: "fab fa-github",
     deploy: "fas fa-globe",
     image: nuptial,
@@ -182,11 +254,13 @@ const projects = [
   {
     id: "fathom-health",
     name: "Fathom health Clone",
-    skills: [
-      <i className={"fab fa-html5"}></i>,
-      <i className={"fab fa-js"}></i>,
-      <i className={"fab fa-css3"}></i>,
-    ],
+    skills: {
+      fa: [
+        <i className={"fab fa-html5"}></i>,
+        <i className={"fab fa-js"}></i>,
+        <i className={"fab fa-css3"}></i>,
+      ],
+    },
     url: "https://github.com/geekypradip/fathom-heath",
     deployurl: "https://geekypradip.github.io/fathom-heath/",
     descriptions: `Fathom Health is a deep learning NLP system to accelerate medical reimbursement.`,
@@ -194,20 +268,7 @@ const projects = [
     deploy: "fas fa-globe",
     image: fathom,
   },
-  {
-    id: "deepmatrix",
-    name: "deepmatrix io",
-    skills: [
-      <i className={"fab fa-html5"}></i>,
-      <i className={"fab fa-react"} style={{ color: "#74c0fc" }}></i>,
-      <i className={"fab fa-css3"}></i>,
-    ],
-    deployurl: "https://deepmatrix.io/",
-    descriptions: `DeepMatrix is a deep tech startup transforming the utilisation of geospatial data. With its cloud-native SaaS platform and AI-driven business model, the company offers comprehensive capabilities across the entire data life cycle, encompassing data ingestion through to advanced analytics.`,
-    // github: "fab fa-github",
-    deploy: "fas fa-globe",
-    image: deepmatrix,
-  },
+
   // {
   //   id: "bath-and-body-works",
   //   name: "Bath And body Works Clone",
