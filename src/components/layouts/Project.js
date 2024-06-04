@@ -7,8 +7,6 @@ const Project = ({
   url,
   skills,
   descriptions,
-  github,
-  deploy,
   deployurl,
   image,
   list,
@@ -28,11 +26,11 @@ const Project = ({
       <div className="project_details_holder">
         <div className="project_name_holder">
           <a
-            title={url}
+            title={deployurl || url}
             className="project-name"
             rel="noopener noreferrer"
             target="_blank"
-            href={url}
+            href={deployurl || url}
           >
             <h2>{name}</h2>
           </a>

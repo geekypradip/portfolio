@@ -39,8 +39,6 @@ const Works = ({ onExploreAllProjectsClick }) => {
                 name={x.name}
                 skills={x.skills}
                 descriptions={x.descriptions}
-                github={x.github}
-                deploy={x.deploy}
                 deployurl={x.deployurl}
                 image={x.image}
               />
