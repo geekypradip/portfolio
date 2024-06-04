@@ -1,16 +1,21 @@
 import { useState } from "react";
 
-export const Sass = () => {
-  const [color, setColor] = useState("#777");
+export const Sass = ({
+  height = "50px",
+  width = "40px",
+  color = "#777",
+  intractable = true,
+}) => {
+  const [colorState, setColor] = useState(color);
   return (
     <svg
       viewBox="0 0 32 32"
       version="1.1"
-      width="40px"
-      height="50px"
-      fill={color}
-      onMouseEnter={() => setColor("#ff4753")}
-      onMouseLeave={() => setColor("#777")}
+      width={width}
+      height={height}
+      fill={colorState}
+      onMouseEnter={() => intractable && setColor("#ff4753")}
+      onMouseLeave={() => intractable && setColor("#777")}
     >
       <g strokeWidth="0"></g>
       <g strokeLinecap="round" strokeLinejoin="round"></g>

@@ -1,17 +1,22 @@
 import { useState } from "react";
 
-export const NextJs = () => {
-  const [color, setColor] = useState("#777");
+export const NextJs = ({
+  height = "50px",
+  width = "40px",
+  color = "#777",
+  intractable = true,
+}) => {
+  const [colorState, setColor] = useState(color);
   return (
     <svg
-      width="55px"
-      height="50px"
+      width={width}
+      height={height}
       viewBox="0 0 32 32"
       version="1.1"
       preserveAspectRatio="xMidYMid"
-      fill={color}
-      onMouseEnter={() => setColor("#ff4753")}
-      onMouseLeave={() => setColor("#777")}
+      fill={colorState}
+      onMouseEnter={() => intractable && setColor("#ff4753")}
+      onMouseLeave={() => intractable && setColor("#777")}
     >
       <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>

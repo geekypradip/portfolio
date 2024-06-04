@@ -1,16 +1,21 @@
 import { useState } from "react";
 
-export const Redux = () => {
-  const [color, setColor] = useState("#777");
+export const Redux = ({
+  height = "50px",
+  width = "40px",
+  color = "#777",
+  intractable = true,
+}) => {
+  const [colorState, setColor] = useState(color);
   return (
     <svg
-      width="55px"
-      height="50px"
-      fill={color}
+      width={width}
+      height={height}
+      fill={colorState}
       viewBox="0 -0.5 25 25"
       xmlns="http://www.w3.org/2000/svg"
-      onMouseEnter={() => setColor("#ff4753")}
-      onMouseLeave={() => setColor("#777")}
+      onMouseEnter={() => intractable && setColor("#ff4753")}
+      onMouseLeave={() => intractable && setColor("#777")}
     >
       <g strokeWidth="0"></g>
       <g strokeLinecap="round" strokeLinejoin="round"></g>

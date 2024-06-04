@@ -1,17 +1,22 @@
 import { useState } from "react";
 
-export const Bootstrap = () => {
-  const [color, setColor] = useState("#777");
+export const Bootstrap = ({
+  height = "50px",
+  width = "40px",
+  color = "#777",
+  intractable = true,
+}) => {
+  const [colorState, setColor] = useState(color);
   return (
     <svg
-      width="40px"
-      height="50px"
-      onMouseEnter={() => setColor("#ff4753")}
-      onMouseLeave={() => setColor("#777")}
+      width={width}
+      height={height}
+      onMouseEnter={() => intractable && setColor("#ff4753")}
+      onMouseLeave={() => intractable && setColor("#777")}
       viewBox="0 0 256 256"
       version="1.1"
       preserveAspectRatio="xMidYMid"
-      fill={color}
+      fill={colorState}
     >
       <g strokeWidth="0"></g>
       <g strokeLinecap="round" strokeLinejoin="round"></g>

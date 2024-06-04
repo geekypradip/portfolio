@@ -38,7 +38,34 @@ const Project = ({
         </div>
         <div className="project_decs_holder">
           {descriptions && <h4>{descriptions}</h4>}
-          {skills && <h3>{Children.toArray(skills.map((skill) => skill))}</h3>}
+          {skills && (
+            <h3
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              {Children.toArray(skills?.fa?.map((skill) => skill))}
+
+              {Children.toArray(
+                skills?.svg?.map((skill) => (
+                  <span
+                    style={{
+                      marginLeft: "10px",
+                      display: "flex",
+                    }}
+                  >
+                    <skill.ele
+                      width={"30px"}
+                      height={"25px"}
+                      color={skill.color}
+                      intractable={false}
+                    />
+                  </span>
+                ))
+              )}
+            </h3>
+          )}
           <div className="deploy">
             {url && (
               <a href={url} target="_blank" rel="noreferrer">

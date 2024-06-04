@@ -1,17 +1,22 @@
 import { useState } from "react";
 
-export const StyledComponent = () => {
-  const [color, setColor] = useState("#777");
+export const StyledComponent = ({
+  height = "50px",
+  width = "40px",
+  color = "#777",
+  intractable = true,
+}) => {
+  const [colorState, setColor] = useState(color);
   return (
     <svg
-      width="40px"
-      height="50px"
-      fill={color}
+      width={width}
+      height={height}
+      fill={colorState}
       viewBox="0 0 24 24"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      onMouseEnter={() => setColor("#ff4753")}
-      onMouseLeave={() => setColor("#777")}
+      onMouseEnter={() => intractable && setColor("#ff4753")}
+      onMouseLeave={() => intractable && setColor("#777")}
     >
       <g strokeWidth="0"></g>
       <g strokeLinecap="round" strokeLinejoin="round"></g>
