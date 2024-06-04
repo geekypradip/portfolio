@@ -15,6 +15,7 @@ import {
   deepmatrix_app,
   fathom,
   nuptial,
+  portfolio,
 } from "./asset/projects";
 
 // Change website animations
@@ -174,7 +175,6 @@ const projects = [
     },
     deployurl: "https://deepmatrix.io/",
     descriptions: `DeepMatrix is a deep tech startup transforming the utilisation of geospatial data. With its cloud-native SaaS platform and AI-driven business model, the company offers comprehensive capabilities across the entire data life cycle, encompassing data ingestion through to advanced analytics.`,
-    deploy: "fas fa-globe",
     image: deepmatrix,
   },
   {
@@ -211,8 +211,31 @@ const projects = [
     },
     deployurl: "https://cloud.deepmatrix.io/",
     descriptions: `DeepMatrix is a deep tech startup transforming the utilisation of geospatial data. With its cloud-native SaaS platform and AI-driven business model, the company offers comprehensive capabilities across the entire data life cycle, encompassing data ingestion through to advanced analytics.`,
-    deploy: "fas fa-globe",
     image: deepmatrix_app,
+  },
+  {
+    id: "portfolio",
+    name: "Portfolio",
+    skills: {
+      fa: [
+        <i className={"fab fa-html5"}></i>,
+        <i className={"fab fa-react"} style={{ color: "#74c0fc" }}></i>,
+        <i className={"fab fa-css3"}></i>,
+      ],
+      svg: [
+        {
+          ele: Bootstrap,
+          color: "#870AFA",
+        },
+        {
+          ele: Sass,
+          color: "#C56494",
+        },
+      ],
+    },
+    url: "https://github.com/geekypradip/portfolio",
+    descriptions: `This is the portfolio website you are currently viewing. It is a responsive website built using React, Bootstrap, and Sass.`,
+    image: portfolio,
   },
   {
     id: "Aranoz",
@@ -228,8 +251,6 @@ const projects = [
     url: "https://github.com/geekypradip/aranoz",
     deployurl: "https://geekypradip.github.io/aranoz/",
     descriptions: `Aranoz is a modern e-commerce template, fully responsive across all screen sizes. It includes features such as product search, single product view, and a cart page.`,
-    github: "fab fa-github",
-    deploy: "fas fa-globe",
     image: aranoz,
   },
   {
@@ -247,8 +268,6 @@ const projects = [
     url: "https://github.com/geekypradip/nuptial",
     deployurl: "https://geekypradip.github.io/nuptial/",
     descriptions: `Nuptial is a fully responsive event management template, optimized for all screen sizes. It includes all the necessary pages for comprehensive event management. The demo event featured in the template showcases a marriage event.`,
-    github: "fab fa-github",
-    deploy: "fas fa-globe",
     image: nuptial,
   },
   {
@@ -264,8 +283,6 @@ const projects = [
     url: "https://github.com/geekypradip/fathom-heath",
     deployurl: "https://geekypradip.github.io/fathom-heath/",
     descriptions: `Fathom Health is a deep learning NLP system to accelerate medical reimbursement.`,
-    github: "fab fa-github",
-    deploy: "fas fa-globe",
     image: fathom,
   },
 
