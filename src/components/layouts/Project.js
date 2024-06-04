@@ -1,4 +1,5 @@
 import React, { Children } from "react";
+import { projectDepolyBar } from "../../profile";
 
 const Project = ({
   id,
@@ -69,13 +70,13 @@ const Project = ({
           <div className="deploy">
             {url && (
               <a href={url} target="_blank" rel="noreferrer">
-                <i className={github} />
+                <i className={projectDepolyBar.github} />
                 <label className="linkText">Source code</label>
               </a>
             )}
             {deployurl && (
               <a href={deployurl} target="_blank" rel="noreferrer">
-                <i className={deploy} />
+                <i className={projectDepolyBar.deploy} />
                 <label className="linkText">Live demo</label>
               </a>
             )}
