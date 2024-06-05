@@ -5,46 +5,70 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="This is the portfolio Website of mine. Made with ReactJS and love. Template by Pradip mandal">
-    <meta name="author" content="Pradip mandal, Masai school">
-    <meta name="keywords" content="HTML, CSS, Javascript, ReactJS, NodeJS, SEO, Coding, Portfolio, Resume, Website, Profile, Github, Linkedin, Design, Interactive, CV, Skills">
-    <meta name="robots" content= "index, follow">
-    <meta name="og:title" content="Portfolio Template">
-    <meta name="og:type" content="Resume Website">
-    <meta name="og:locale" content="en_IN">
-    <meta property="og:image" content="%PUBLIC_URL%/favicon-32x32.png">
+    <meta
+      name="description"
+      content="This is the portfolio Website of mine. Made with ReactJS and love. Template by Pradip mandal"
+    />
+    <meta name="author" content="Pradip mandal, Masai school" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Javascript, ReactJS, NodeJS, SEO, Coding, Portfolio, Resume, Website, Profile, Github, Linkedin, Design, Interactive, CV, Skills"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="og:title" content="Portfolio Template" />
+    <meta name="og:type" content="Resume Website" />
+    <meta name="og:locale" content="en_IN" />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon-32x32.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- <link rel="stylesheet" href="./Bootstrap5.css"> -->
-    <script src="https://kit.fontawesome.com/9b271ff51f.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9b271ff51f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-    <title> pradip's Portfolio</title>
+    <title>Pradip Mandal</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
   <script>
-	const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-	if(darkPref.matches && localStorage.getItem('mode') !== "Light")
-      localStorage.setItem('mode', 'Dark')
+    const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+    if (darkPref.matches && localStorage.getItem("mode") !== "Light")
+      localStorage.setItem("mode", "Dark");
   </script>
   <script>
     const fun = () => {
-    if(localStorage.getItem('mode') === 'Dark'){
-      document.getElementById('mode-switch').checked = true;
-      document.documentElement.classList.toggle('dark-mode')
-      document.getElementById('not-dark').classList.toggle('inverse-dark')
-      document.getElementById('not-dark2').classList.toggle('inverse-dark')
-      var x = document.getElementsByClassName('img-pro')
-      for(let i = 0; i < x.length; i += 1) {
-        x.item(i).classList.toggle("inverse-dark");
+      if (localStorage.getItem("mode") === "Dark") {
+        document.getElementById("mode-switch").checked = true;
+        document.documentElement.classList.toggle("dark-mode");
+        document.getElementById("not-dark").classList.toggle("inverse-dark");
+        document.getElementById("not-dark2").classList.toggle("inverse-dark");
+        var x = document.getElementsByClassName("img-pro");
+        for (let i = 0; i < x.length; i += 1) {
+          x.item(i).classList.toggle("inverse-dark");
+        }
       }
-    }
-    }
+    };
     fun();
   </script>
 </html>
